@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HİPOTENUS HESAPLAMA</h2>
+    <input  placeholder="1. sayıyı giriniz" type="text" id="sayı1">
+    <input  placeholder="2. sayıyı giriniz" type="text" id="sayı2">
+    <button id="btn" onclick="Hesapla()">HESAPLA</button>
+    <div id="sonuc"></div>
+
+
+    <script>
+        
+        function Hesapla()
+		{
+			var k1=Number(document.getElementById("sayı1").value);
+			var k2=Number(document.getElementById("sayı2").value);
+			var hipotenus=Math.sqrt((k1*k1)+(k2*k2));
+			document.getElementById("sonuc").innerHTML="Hipotenüs : "+hipotenus;
+		}
+		
+        var hesapBtn=document.getElementById("btn");
+            hesapBtn.onclick=Hesapla;
+
+       
+        
+
+
+       
+
+        </script>
+
+        <div class="container">
+            <h2>Hipotenüs Hesaplama 2</h2>
+           
+                <div class="form-group">
+                    <label for="sayi1">SAYI 1:</label><br>
+                    <input type="text" class="form-control" id="sayi1" placeholder="Bir sayi giriniz">
+                </div>
+                <div class="form-group">
+                    <label for="sayi2">SAYI 2</label><br>
+                    <input type="text" class="form-control" id="sayi2" placeholder="Bir sayı giriniz">
+                </div><br>
+                <button type="button" id="hspl" class="btn btn-primary" >HESAPLA</button>
+            <br>
+
+
+        </div>
+
+        <script>
+           
+
+
+
+        </script>
+
+        <script>
+    function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World!";
+  }
+  </script>
+  <button onclick="myFunction()">Try it</button>
+
+  <p id="demo"></p>
+  <br>
+
+  <script>
+      function resım() {
+          document.getElementById("demo2").innerHTML="MERHABA";
+
+      }
+  </script>
+    <button onclick="resım()">DENE</button>
+    <p id="demo2"></p>
+
+       
+
+    
+</body>
+</html>
